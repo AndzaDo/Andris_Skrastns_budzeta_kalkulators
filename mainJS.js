@@ -16,18 +16,31 @@
 //12.Izsaukt funkciju_1, kas izmaina pieejamā budžeta vertību
 
 
-var ienākumi = document.getElementsByClassName("total_income").innerHTML;
+const ienak = document.getElementsByClassName("total_income").innerHTML;
+const izde = document.getElementsByClassName("total_expenses").innerHTML;
+const budz = document.getElementsByid("budget__value").innerHTML;
 
-var izdevumi = document.getElementsByClassName("total_expenses").innerHTML;
+const income = document.querySelector("total__income").innerHTML;
+const texpenses = document.querySelector("total__expenses").innerHTML;
+var incorexp = document.getElementById("add__type").innerHTML;
+var budgetleft;
+var totalhtml;
+var budzethtml;
 
-var budzets = document.getElementsByClassName("budget__value").innerHTML;
-
-function Budzets (ienākumi,izdevumi){
-
-
-
-
-
-
-return ienākumi-izdevumi;
+function totalbudget (tbudg){
+    budzethtml = parseInt(atlik.innerHTML,0) + parseInt(budzetKopa,0)
+    atlik.innerHTML = budzethtml;
 }
+function function_2(){
+    var item = document.createElement("DIV");
+item.className += "list_item";
+
+var valdiv = document.createElement("DIV")
+
+
+}
+
+function function_3(){
+
+}
+
