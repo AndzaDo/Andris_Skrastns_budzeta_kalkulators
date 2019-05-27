@@ -1,8 +1,13 @@
+:root {
+  --main-color: grey;
+}
+
 /* Nodefinē kontenera maksimālo platumu un ar margin: auto nocentre */
 .container {
   max-width: 1000px;
   margin: auto;
-  background-color:var(--main-bg-colo)r2;
+  background: var(--main-color);
+  font-family: Calibri;
 }
 
 /* Pieškir izkārtojumu ar css grid, priekš desktop*/
@@ -33,10 +38,6 @@
 .container > div {
   padding: 30px;
   border: 1px blueviolet solid;
-  background-color:var(--main-bg-color);
-  font-family: var(--main-txt-font);
-  color: var(--main-txt-color);
-  padding:var(--main-padding);
 }
 
 .container > div h1 {
@@ -69,15 +70,26 @@
 .list__total {
   align-self: flex-end;
 }
+button{
+  border-radius: 4px;
+  background-color: green;
+  font-family: Calibri;
+  font-weight: bold;
 
-:root{
-  --main-bg-color: coral;
-  --main-bg-color2: black;
-  --main-txt-color: midnightblue;
-  --main-padding:15px;
-  --max-width:800px ;
-  --breakpoint-medium: 800px;
-  --large-padding:30px;
-  --main-txt-font: Calibri;
 }
+input{
+  font-size: 12px;
+  border-color: green;
+  padding: 5px;
+  font-family: Calibri;
+}
+/* 
+CSS UZDEVUMI
+Nostilot galvenes un saraksta elementus
+-"Pieejamais budžets" tekstam piešķirt stilu, kas labi iederas kopējā dizainā
+-Ievades laukiem piešķirt vizuāli pievilcīgu stilu (font-size, border, padding)
+-Nostilot pogas vizuāli pievilcīgi
+-Izcelt kopējo izdevumu un ienākumu izvadi
+-Ienākumu un izdevumu sarakstam piešķirt stilu, kas labāk nodala saraksta ierakstus vienu no otra
 
+*/
