@@ -1,13 +1,9 @@
-:root {
-  --main-color: grey;
-}
+
 
 /* Nodefinē kontenera maksimālo platumu un ar margin: auto nocentre */
 .container {
   max-width: 1000px;
   margin: auto;
-  background: var(--main-color);
-  font-family: Calibri;
 }
 
 /* Pieškir izkārtojumu ar css grid, priekš desktop*/
@@ -71,24 +67,66 @@
   align-self: flex-end;
 }
 button{
-  border-radius: 4px;
-  background-color: green;
-  font-family: Calibri;
-  font-weight: bold;
-
+  -moz-box-shadow: 0px 10px 14px -7px #9fb4f2;
+	-webkit-box-shadow: 0px 10px 14px -7px #9fb4f2;
+	box-shadow: 0px 10px 14px -7px #9fb4f2;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #7892c2), color-stop(1, #476e9e));
+	background:-moz-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+	background:-webkit-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+	background:-o-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+	background:-ms-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+	background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#7892c2', endColorstr='#476e9e',GradientType=0);
+	background-color:#7892c2;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	border:1px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:6px 12px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #283966;
+}
+button:hover{
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #476e9e), color-stop(1, #7892c2));
+	background:-moz-linear-gradient(top, #476e9e 5%, #7892c2 100%);
+	background:-webkit-linear-gradient(top, #476e9e 5%, #7892c2 100%);
+	background:-o-linear-gradient(top, #476e9e 5%, #7892c2 100%);
+	background:-ms-linear-gradient(top, #476e9e 5%, #7892c2 100%);
+	background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#476e9e', endColorstr='#7892c2',GradientType=0);
+	background-color:#476e9e;
+}
+button:active{
+  position:relative;
+	top:1px;
 }
 input{
-  font-size: 12px;
-  border-color: green;
-  padding: 5px;
-  font-family: Calibri;
+  border-color: #476e9e;
+  border-radius: 5px;
+  -moz-border-radius: 5px; 
+-webkit-border-radius: 5px;
+border-width: thin; 
+height: 30px;
+}
+::placeholder{
+  margin-left: 5px;
+}
+select{
+  border-radius: 25px;
+  border-color: #476e9e;
+  height: 30px;
 }
 /* 
 CSS UZDEVUMI
 Nostilot galvenes un saraksta elementus
 -"Pieejamais budžets" tekstam piešķirt stilu, kas labi iederas kopējā dizainā
 -Ievades laukiem piešķirt vizuāli pievilcīgu stilu (font-size, border, padding)
--Nostilot pogas vizuāli pievilcīgi
 -Izcelt kopējo izdevumu un ienākumu izvadi
 -Ienākumu un izdevumu sarakstam piešķirt stilu, kas labāk nodala saraksta ierakstus vienu no otra
 
