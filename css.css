@@ -4,6 +4,8 @@
 .container {
   max-width: 1000px;
   margin: auto;
+  font-family: Calibri;
+  
 }
 
 /* Pieškir izkārtojumu ar css grid, priekš desktop*/
@@ -21,19 +23,22 @@
 .top {
   grid-area: top;
   text-align: center;
+  background-color: #9fb4f2;
 }
 
 .left {
   grid-area: left;
+  background-color: #9fb4f2;
 }
 
 .right {
   grid-area: right;
+  background-color: #9fb4f2;
 }
 
 .container > div {
   padding: 30px;
-  border: 1px blueviolet solid;
+  border: 1px #476e9e solid;
 }
 
 .container > div h1 {
@@ -114,9 +119,6 @@ input{
 border-width: thin; 
 height: 30px;
 }
-::placeholder{
-  margin-left: 5px;
-}
 select{
   border-radius: 25px;
   border-color: #476e9e;
@@ -125,8 +127,6 @@ select{
 /* 
 CSS UZDEVUMI
 Nostilot galvenes un saraksta elementus
--"Pieejamais budžets" tekstam piešķirt stilu, kas labi iederas kopējā dizainā
--Ievades laukiem piešķirt vizuāli pievilcīgu stilu (font-size, border, padding)
 -Izcelt kopējo izdevumu un ienākumu izvadi
 -Ienākumu un izdevumu sarakstam piešķirt stilu, kas labāk nodala saraksta ierakstus vienu no otra
 

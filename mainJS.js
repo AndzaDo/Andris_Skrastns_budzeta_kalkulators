@@ -14,7 +14,7 @@ let BudgSaveData = {}, id = 0;
 
 //TotalBudget, kas izmaina pieejamā budžeta vertību
 function TotalBudget(tbudg) {
-  budg.innerHTML = parseInt(budg.innerHTML, 0) + parseInt(tbudg, 0);
+  budg.innerHTML = parseInt(budg.innerHTML, 0) + parseInt(tbudg.innerHTML, 0);
   localstorage();
 }
 
